@@ -1,13 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MP1</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <header class="site-header">
+            <nav class="navbar" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#ballpark">Ballpark</a>
+                <a href="#players">Players</a>
+                <a href="#highlights">Highlights</a>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <h1> Hello, Welcome to Wrigley</h1>
+                <p> A page all about the Chicago Cubs</p>
+                <button id="learn-more">Learn More</button>
+            </section>
+
+            <section id="ballpark">
+                <h2> History of Wrigley Field </h2>
+                <h3> A Look at the Iconic Ballpark </h3>
+                <div class="column-container">
+                    <div class="column" data-info="history">
+                        <img src="assets/wrigley_field_old.jpg">
+                        <h3> History of Wrigley Field
+                        </h3>
+                        <p> Click to learn more about Wrigley's History</p>
+                    </div>
+                    <div class="column" data-info="pennant">
+                        <img src="assets/wrigley_champ.jpg">
+                        <h3> History of Winning
+                        </h3>
+                        <p> Click to learn more about the Cubs' championship victories</p>
+                    </div>
+                    <div class="column" data-info="fans">
+                        <img src="assets/wrigley_w_flag.jpg">
+                        <h3> Best Fans in Baseball
+                        </h3>
+                        <p> Click to learn more about Wrigley's iconic traditions and fanbase</p>
+                    </div>
+                </div>
+            </section>
+
+            <div id="info-modal" class="modal">
+                <div class="modal-content">
+                    <button id="close-modal">&times;</button>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-text"></p>
+                </div>
+            </div>
+
+            <section id="players">
+                <h2> Take a look at some of the best players on the roster</h2>
+
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="assets/pete-crow-armstrong.jpg" alt="Pete Crow-Armstrong">
+                            <h3> Pete Crow-Armstrong</h3>
+                            <p> Known for his powerful hitting, elite defense, and exceptional speed.
+                                In the 2025-2026 season, he has been a key contributor to the Cubs' success.
+                                This season, he has hit .270 with 45 homeruns, 107 RBIs, and 38 stolen bases.
+                                His 45 homerun mark has set a new record for the most homeruns
+                                hit by a left-handed Cubs player in a single season. Furthermore, he
+                                is only two steals away from being the only Cub all-time to have a 40/40 season.
+                            </p>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/seiya-suzuki.jpg" alt="Seiya Suzuki">
+                            <h3> Seiya Suzuki</h3>
+                            <p> Known for his powerful swing and patient approach at the plate, Seiya Suzuki has 
+                                been an important contributor to the Cubs' offense during the 2026 season. Through 
+                                September 20, he is batting .267 with 25 home runs, 85 RBIs, and 93 runs scored. 
+                                He has also collected 30 doubles and drawn 78 walks, contributing to an impressive 
+                                .835 OPS. His combination of power and ability to get on base gives the Cubs a dangerous 
+                                presence in the lineup.
+                            </p>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/alex-bregman.jpg" alt="Alex Bregman">
+                            <h3> Alex Bregman</h3>
+                            <p> Alex Bregman brings power and a disciplined approach to the Cubs' lineup. Through September 20 
+                                of the 2026 season, he is batting .262 with 26 home runs, 89 RBIs, and 89 runs scored. He has 
+                                also recorded 32 doubles and drawn 75 walks, posting a .352 on-base percentage and an .804 OPS. 
+                                His ability to produce extra-base hits while working tough at-bats makes him a valuable part of 
+                                Chicago's offense.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="carousel-arrow carousel-arrow-left" type="button">&#10094;</button>
+                    <button class="carousel-arrow carousel-arrow-right" type="button">&#10095;</button>
+                </div>
+                
+            </section>
+
+            <section id="highlights">
+                <h2> The chicago cubs have been hot this year! Take a peek
+                    at some of their most electric moments.
+                </h2>
+                <video controls>
+                    <source src="assets/cubs-season-highlights.mp4" type="video/mp4">
+                </video>
+                <p> HIGHLIGHTS FROM THE 2025-26 SEASON</p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/cubs_logo.png" width="80" height="80">
+                <div>
+                    <p> Chicago Cubs Fan Page</p>   
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow the Cubs</h3>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/cubs/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    
+                    <a href="https://www.twitter.com/Cubs/">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/Cubs/">
+                        <i class="fa-brands fa-facebook-f"></i> 
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p> Chicago Cubs Student Fan Page</p>
+        </div>
+            
+        </footer>
     </body>
 </html>
